@@ -15,6 +15,11 @@
                 {%else%}
                     <td>{{ item.name }}</td>
                 {%endif%}
+                    <td>
+                        <a href="/edit/{{ item_id }}">
+                            <button>EDIT</button>
+                        </a>
+                    </td>
             </tr>
         {%empty%}
             <tr>
